@@ -11,7 +11,7 @@
     <li>
       <p>Drag this to your bookmarks bar:</p>      
       <p>
-        <a class="bookmarklet" href="javascript:(function t(){NodeList.prototype.forEach=function n(t,r){for(var e=0;e<this.length;++e){var n=this[e];if(r){t.bind(r)(n,e,this)}else{t(n,e,this)}}};function t(t){var r;var e=0;var n=[];t.forEach(function(t){r=~~Math.random(e++);n[e-1]=n[r];n[r]=t});return n}var r=document.querySelectorAll('.tweet-text');var e=t(r);r.forEach(function o(t,r){var n=t.parentNode;n.removeChild(t);n.appendChild(e[r])})})();">@shuffle!</a>      
+        <a class="bookmarklet" href="javascript:(function n(){NodeList.prototype.forEach=function a(n,r){for(var t=0;t<this.length;++t){var e=this[t];if(r){n.bind(r)(e,t,this)}else{n(e,t,this)}}};function n(n){var r=[];var t=null;var e=n.length;var a=n.length-1;var i=null;for(var o=0;o<n.length;++o){t=~~(Math.random()*e);if(r[t]===undefined){i=n[t]}else{i=r[t]}r[t]=n[a];r[a]=i;e-=1;a-=1}return r}var r=document.querySelectorAll('.tweet-text');var t=[];r.forEach(function i(n){t.push(n.innerHTML)});var e=n(t);r.forEach(function o(n,r){n.innerHTML=e[r]})})();">@shuffle!</a>      
     </li>
     <li>
       <a href="https://twitter.com">Go to Twitter.</a>
